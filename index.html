@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Etch-a-Sketch</title>
-</head>
-<body  ondragstart="return false;" ondrop="return false;">
-    
-    <h1 class="title">Etch-a-Sketch</h1>
-
+  </head>
+  <body ondragstart="return false;" ondrop="return false;">
+    <header>
+      <h1 class="title">Etch-a-Sketch</h1>
+    </header>
     <div class="game">
-        <div class="interactiondiv">
-            <div class="colormenu">
-                <div class="colorpickerparagraf">
-                    <input type="color" class="colorpicker" oninput="colorpenupdater()" id="colorpickerpen" value="#000000">
-                    <p class="colorpickertext">Pen color</p>
-                </div>
-                <div class="colorpickerparagraf">
-                    <input type="color" class="colorpicker" oninput="colorbackgroundupdater()" id="colorpickerbackground" value="#ffffff">
-                    <p class="colorpickertext">Background color</p>
-                </div>
-            </div>
-            <div class="slidecontainer">
-                <p class="slideroutput">16x16</p>
-                <input type="range" min="2" max="100" value="16" class="slider">
-            </div>
-            <div class="buttonstoggle">
-                <button class="buttontoggle colornormalbutton buttontogglefirstfloor" id="buttoncolornormal">Single Color</button>
-                <button class="buttontoggle eraserbutton" id="buttonerase">Eraser</button>
-                <button class="buttontoggle togglerainbow" id="buttonrainbow">Toggle Rainbow</button>
-            </div>
-            <div class="buttonprop">
-                <button class="buttontogglegrid togglegridlines" id="buttongrid">Toggle Gridlines</button>
-                <button class="resetbutton" id="buttonreset">Reset</button>
-            </div>
-            
+      <div class="interaction-bar">
+        <div class="colormenu">
+          <div class="colorpickerparagraf">
+            <input
+              type="color"
+              class="colorpicker"
+              oninput="colorpenupdater()"
+              id="colorpickerpen"
+              value="#000000"
+            />
+            <p class="colorpickertext">Pen color</p>
+          </div>
+          <div class="colorpickerparagraf">
+            <input
+              type="color"
+              class="colorpicker"
+              oninput="colorbackgroundupdater()"
+              id="colorpickerbackground"
+              value="#ffffff"
+            />
+            <p class="colorpickertext">Background color</p>
+          </div>
         </div>
-        
-        <div class="container">
+        <div class="slidecontainer">
+          <p class="slideroutput">16x16</p>
+          <input type="range" min="2" max="100" value="16" class="slider" />
         </div>
+        <div class="buttonstoggle">
+          <button
+            class="buttontoggle colornormalbutton buttontogglefirstfloor"
+            id="buttoncolornormal"
+          >
+            Single Color
+          </button>
+          <button class="buttontoggle eraserbutton" id="buttonerase">
+            Eraser
+          </button>
+          <button class="buttontoggle togglerainbow" id="buttonrainbow">
+            Toggle Rainbow
+          </button>
+        </div>
+        <div class="buttonprop">
+          <button class="buttontogglegrid togglegridlines" id="buttongrid">
+            Toggle Gridlines
+          </button>
+          <button class="resetbutton" id="buttonreset">Reset</button>
+        </div>
+      </div>
 
+      <div class="whiteboard"></div>
     </div>
 
-    <div class="footer">A TOP Project from ThisisDC®</div>
-</body>
+    <div class="footer">TOP project by thatsdc®</div>
+  </body>
 </html>

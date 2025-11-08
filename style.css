@@ -1,182 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
-  /*    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif; */
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+/*    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
-  input[type="color"] {
-    border: none;
+input[type="color"] {
+  border: none;
 }
 input[type="color"]::-webkit-color-swatch-wrapper {
-    padding: 0;
+  padding: 0;
 }
 input[type="color"]::-webkit-color-swatch {
-    border: none;
+  border: none;
 }
 
-body{
-    background-color: #ededed;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    margin: 0px;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url(wallpaper.jpg);
+body {
+  background-color: #ededed;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url(wallpaper.jpg);
+  margin: 0;
 }
 
-.title{
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
-    color: white;
-    font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
 }
 
-.container{
-    display:flex;
-    background-color: white;
-    border: black solid 5px;
-    height: auto;
-    width: auto;
+.whiteboard {
+  display: flex;
+  background-color: white;
+  border: black solid 5px;
+  height: auto;
+  width: auto;
 }
 
-.column{
+.game {
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
-.game{
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    position: relative;
-    top: 35px;
-    margin-top: -25px;
+.slidecontainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(79, 154, 0);
+  padding-bottom: 5px;
+  border-radius: 10px;
+  width: 195px;
 }
 
-.slidecontainer{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(79, 154, 0);
-    padding-bottom: 5px;
-    border-radius: 10px;
-    width: 195px;
+.slideroutput {
+  color: white;
+  align-self: center;
+  margin-bottom: 0px;
+}
+.slider {
+  width: 180px;
+  align-self: center;
 }
 
-.slideroutput{
-    color: white;
-    align-self: center;
-    margin-bottom: 0px;
-}
-.slider{
-    width: 180px;
-    align-self: center;
-}
-
-.colormenu{
-    padding-bottom: 10px;
-    background-color: rgb(81, 0, 158);
-    padding-left: 10px;
-    padding-bottom: -20px;
-    border-radius: 10px;
-    margin-right: 27px;
-    margin-bottom: 10px;
+.colormenu {
+  padding-bottom: 10px;
+  background-color: rgb(81, 0, 158);
+  padding-left: 10px;
+  padding-bottom: -20px;
+  border-radius: 10px;
+  margin-right: 27px;
+  margin-bottom: 10px;
 }
 
-.colorpickerparagraf{
-    align-items: center;
-    display: flex;
-    margin-bottom: -10px;
-
+.colorpickerparagraf {
+  align-items: center;
+  display: flex;
+  margin-bottom: -10px;
 }
 
-
-.colorpickertext{
-    margin-left: 10px;
-    color: white;
+.colorpickertext {
+  margin-left: 10px;
+  color: white;
 }
 
-.cell{
-    box-sizing: border-box;
-    border:rgb(160,160,255) solid 1px;
-    background-color: white;
+.cell {
+  box-sizing: border-box;
+  border: rgb(160, 160, 255) solid 1px;
+  background-color: white;
 }
 
-.cellnoborder{
-    border: none;
+.cellnoborder {
+  border: none;
 }
 
-.interactiondiv{
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
-    width: 220px;
-    padding-left: 20px;
-    padding-top: 10px;
-    border-radius: 20px;
-    height: 420px;
+.interaction-bar {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  width: 220px;
+  padding-left: 20px;
+
+  padding-top: 10px;
+  border-radius: 20px;
+  height: 420px;
 }
 
-.buttonstoggle button{
-    background-color: rgb(0, 149, 255);
+.buttonstoggle button {
+  background-color: rgb(0, 149, 255);
 }
 
-button{
-    margin-top: 15px;
-    width: 60px;
-    height: 30px;
-    margin-top: 10px;
-    margin-right: 70px;
-    width: 200px;
-    border-radius: 50px;
-    border: none;
-    color: azure;
-    font-weight: bold;
+button {
+  margin-top: 15px;
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  margin-right: 70px;
+  width: 200px;
+  border-radius: 50px;
+  border: none;
+  color: azure;
+  font-weight: bold;
 }
 
-.buttonprop button:hover{
-    box-shadow: rgb(255, 0, 0) 0 1px 30px;
-    background-image: linear-gradient(92.88deg, #b30000 9.16%, #ea6500 43.89%, #ee0073 64.72%);
-    transition-duration: .1s;
-
-
+.buttonprop button:hover {
+  box-shadow: rgb(255, 0, 0) 0 1px 30px;
+  background-image: linear-gradient(
+    92.88deg,
+    #b30000 9.16%,
+    #ea6500 43.89%,
+    #ee0073 64.72%
+  );
+  transition-duration: 0.1s;
 }
 
 .buttonstoggle button:hover {
-    box-shadow: rgb(50, 50, 255) 0 1px 30px;
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-    transition-duration: .1s;
+  box-shadow: rgb(50, 50, 255) 0 1px 30px;
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  transition-duration: 0.1s;
 }
 
-
-.buttonprop button{
-    background-color: rgb(255, 136, 0);
-    
-
+.buttonprop button {
+  background-color: rgb(255, 136, 0);
 }
 
-
-.footer{
-    display: flex;
-    background-color: rgb(1, 0, 66);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 13px;
-    height: 100px;
+.footer {
+  display: flex;
+  background-color: rgb(1, 0, 66);
+  width: 100%;
+  height: 40px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 13px;
 }
 
-
-
-.buttontogglefirstfloor{
-    box-shadow: rgb(50, 50, 255) 0 1px 30px;
-    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
-
+.buttontogglefirstfloor {
+  box-shadow: rgb(50, 50, 255) 0 1px 30px;
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
 }
 
-.buttonpropfirstfloor{
-    box-shadow: rgb(255, 0, 0) 0 1px 30px;
-    background-image: linear-gradient(92.88deg, #b30000 9.16%, #ea6500 43.89%, #ee0073 64.72%);
-
+.buttonpropfirstfloor {
+  box-shadow: rgb(255, 0, 0) 0 1px 30px;
+  background-image: linear-gradient(
+    92.88deg,
+    #b30000 9.16%,
+    #ea6500 43.89%,
+    #ee0073 64.72%
+  );
 }
