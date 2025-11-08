@@ -36,5 +36,3 @@ Try it out: https://thatsdc.github.io/Etch-a-Sketch/
 ```bash
 git clone https://github.com/your-username/etch-a-sketch.git
 cd etch-a-sketch
-
-website: https://thisisdc.github.io/Etch-a-Sketch/
